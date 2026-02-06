@@ -1,0 +1,79 @@
+{
+  "name": "@authensure/sdk",
+  "version": "1.0.0",
+  "description": "Official Authensure SDK for Node.js - Electronic signature and document authentication platform",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "docs": "typedoc --out docs src/index.ts"
+  },
+  "keywords": [
+    "authensure",
+    "esignature",
+    "electronic-signature",
+    "document-signing",
+    "digital-signature",
+    "api",
+    "sdk",
+    "node",
+    "typescript"
+  ],
+  "author": "Authensure <support@authensure.app>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Authensure/authensure-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Authensure/authensure-node/issues"
+  },
+  "homepage": "https://authensure.app/docs/sdk/node",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.54.0",
+    "msw": "^2.0.0",
+    "tsup": "^8.0.0",
+    "typedoc": "^0.25.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.7.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}
