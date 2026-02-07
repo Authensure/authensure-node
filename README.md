@@ -1,6 +1,6 @@
 # Authensure Node.js SDK
 
-[![npm version](https://badge.fury.io/js/@synoryx_labs%2Fauthensure-sdk.svg)](https://www.npmjs.com/package/@synoryx_labs/authensure-sdk)
+[![npm version](https://img.shields.io/npm/v/@synoryx_labs/authensure-sdk)](https://www.npmjs.com/package/@synoryx_labs/authensure-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Official Node.js SDK for [Authensure](https://authensure.app) - the electronic signature and document authentication platform.

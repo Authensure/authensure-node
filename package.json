@@ -1,6 +1,6 @@
 {
   "name": "@synoryx_labs/authensure-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Authensure SDK for Node.js - Electronic signature and document authentication platform",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
