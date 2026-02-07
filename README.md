@@ -1,6 +1,6 @@
 # Authensure Node.js SDK
 
-[![npm version](https://badge.fury.io/js/@authensure%2Fsdk.svg)](https://www.npmjs.com/package/@authensure/sdk)
+[![npm version](https://badge.fury.io/js/@synoryx_labs%2Fauthensure-sdk.svg)](https://www.npmjs.com/package/@synoryx_labs/authensure-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Official Node.js SDK for [Authensure](https://authensure.app) - the electronic signature and document authentication platform.
@@ -18,19 +18,19 @@ Official Node.js SDK for [Authensure](https://authensure.app) - the electronic s
 ## Installation
 
 ```bash
-npm install @authensure/sdk
+npm install @synoryx_labs/authensure-sdk
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @authensure/sdk
+yarn add @synoryx_labs/authensure-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import Authensure from '@authensure/sdk';
+import Authensure from '@synoryx_labs/authensure-sdk';
 
 // Initialize with API key
 const authensure = new Authensure({
@@ -428,7 +428,7 @@ import {
   NotFoundError,
   NetworkError,
   TimeoutError,
-} from '@authensure/sdk';
+} from '@synoryx_labs/authensure-sdk';
 
 try {
   await authensure.envelopes.get('invalid_id');
@@ -455,7 +455,7 @@ try {
 
 ```typescript
 import express from 'express';
-import { Authensure } from '@authensure/sdk';
+import { Authensure } from '@synoryx_labs/authensure-sdk';
 
 const app = express();
 const authensure = new Authensure({ apiKey: process.env.AUTHENSURE_API_KEY });
@@ -506,7 +506,7 @@ import Authensure, {
   EnvelopeStatus,
   UserRole,
   AuthensureConfig,
-} from '@authensure/sdk';
+} from '@synoryx_labs/authensure-sdk';
 
 // All types are available for use
 const config: AuthensureConfig = {
