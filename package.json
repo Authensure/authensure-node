@@ -1,5 +1,5 @@
 {
-  "name": "@authensure/sdk",
+  "name": "@synoryx_labs/authensure-sdk",
   "version": "1.0.0",
   "description": "Official Authensure SDK for Node.js - Electronic signature and document authentication platform",
   "main": "dist/index.js",
